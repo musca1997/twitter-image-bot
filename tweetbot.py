@@ -34,6 +34,7 @@ def twitter_img_bot():
     api = tweepy.API(auth)
     media = api.media_upload(random_img)
     api.update_status(status='[random image]', media_ids=[media.media_id])
+    #os.remove(wholepath)
     
     time_wait()
     
